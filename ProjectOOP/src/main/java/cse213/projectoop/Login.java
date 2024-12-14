@@ -1,5 +1,6 @@
 package cse213.projectoop;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,6 +15,7 @@ import java.io.IOException;
 
 public class Login {
 
+    public PasswordField LoginPasswordTextField;
     @FXML
     private TextField UserIDTextField;
 
@@ -60,7 +62,7 @@ public class Login {
     private void handleCreateNewAccountButtonClick() {
         System.out.println("Create Account Button Clicked!");
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/cse213/projectoop/CreateNewAccount.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/cse213/projectoop/CreateNewAccountController.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = (Stage) CreateAccountButton.getScene().getWindow();
@@ -91,10 +93,12 @@ public class Login {
 
     // Utility to show alerts
     private void showAlert(String title, String message) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
+
+    }
+
+    public void CreateAccountButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    public void LoginButtonOnAction(ActionEvent actionEvent) {
     }
 }
