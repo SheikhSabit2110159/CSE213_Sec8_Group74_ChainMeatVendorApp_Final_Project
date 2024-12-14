@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.vendor.VendorPolicy">
+   <children>
+      <Text layoutX="58.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TERMS AND CONDITIONS FOR LIVESTOCK SUPPLIERS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By supplying livestock to Bengal Meat, any natural or legal person (the “Vendor”) agrees that they have read these Terms and Conditions (the “Terms and Conditions”) carefully and accept to be bound by them. If any Vendor does not agree to all of the Terms and Conditions, they will not be eligible to supply livestock to Bengal Meat.These Terms and Conditions are deemed effective upon the commencement of any transaction with Bengal Meat, signifying the Vendor’s acceptance of these Terms and Conditions. If a Vendor does not wish to be bound by the Terms and Conditions, such Vendor must immediately discontinue their engagement with Bengal Meat." wrappingWidth="328.7541780471802" />
+      <Button fx:id="BackButtonVP" layoutX="55.0" layoutY="316.0" mnemonicParsing="false" onAction="#BackButtonVPOA" prefHeight="26.0" prefWidth="53.0" style="-fx-background-color: #89A8B2;" text="Back">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="DownloadButtonVP" layoutX="148.0" layoutY="343.0" mnemonicParsing="false" onAction="#DownloadButtonVPOA" style="-fx-background-color: #89A8B2;" text="Download">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="AcceptButtonVP" layoutX="246.0" layoutY="318.0" mnemonicParsing="false" onAction="#AcceptButtonVPOA" style="-fx-background-color: #89A8B2;" text="Accept">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="TearmsCheckBoxVP" layoutX="55.0" layoutY="282.0" mnemonicParsing="false" onAction="#TearmsCheckBoxVPOA" text="I have read all the Tearms and Conditions">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

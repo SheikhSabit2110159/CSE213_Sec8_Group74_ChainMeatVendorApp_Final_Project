@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.projectoop.CreateNewAccount">
+   <children>
+      <Text layoutX="220.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Your Account">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="220.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New User?">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="NameTextFieldCNA" layoutX="39.0" layoutY="107.0" />
+      <Text layoutX="49.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="50.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="41.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" />
+      <Text layoutX="309.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" />
+      <Text layoutX="309.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Text layoutX="311.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Re-type Password" />
+      <Button layoutX="241.0" layoutY="332.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: #87CEEB;" text="Sign up" />
+      <RadioButton fx:id="maleRadioButtonCNA" layoutX="394.0" layoutY="253.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="FemaleRadioButtonCNA" layoutX="304.0" layoutY="249.0" mnemonicParsing="false" text="Female" />
+      <TextField fx:id="RetypePasswordCNA" layoutX="307.0" layoutY="165.0" />
+      <TextField fx:id="PasswordTextFieldCNA" layoutX="307.0" layoutY="107.0" />
+      <TextField fx:id="PhoneNumberTextFieldCNA" layoutX="39.0" layoutY="165.0" />
+      <RadioButton fx:id="othersRadioButtonCNA" layoutX="476.0" layoutY="249.0" mnemonicParsing="false" text="Others" />
+      <TextField layoutX="39.0" layoutY="236.0" />
+      <CheckBox layoutX="39.0" layoutY="291.0" mnemonicParsing="false" text="Agreed with terms and conditions" />
+   </children>
+</AnchorPane>
