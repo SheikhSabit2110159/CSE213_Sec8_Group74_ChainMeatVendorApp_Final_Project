@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>CSE213</groupId>
-    <artifactId>ProjectOOP</artifactId>
+    <artifactId>Vendor</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>ProjectOOP</name>
+    <name>Vendor</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -49,7 +49,6 @@
                 <configuration>
                     <source>21</source>
                     <target>21</target>
-                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
             <plugin>
@@ -61,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>cse213.projectoop/cse213.projectoop.HelloApplication</mainClass>
+                            <mainClass>cse213.vendor/cse213.vendor.HelloApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

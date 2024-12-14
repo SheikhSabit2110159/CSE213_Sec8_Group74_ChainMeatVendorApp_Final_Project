@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.projectoop.CommonDashboardView">
@@ -53,26 +51,12 @@
             </MenuBar>
          </top>
          <center>
-            <Label contentDisplay="BOTTOM" prefHeight="375.0" prefWidth="331.0" text="     Bangladesh's                                                First &amp; only one                            International Abattoir" textAlignment="CENTER" textFill="#5c6be0" wrapText="true" BorderPane.alignment="CENTER">
+            <Label contentDisplay="BOTTOM" prefHeight="188.0" prefWidth="327.0" text="Welcome to our Shop" BorderPane.alignment="CENTER">
                <font>
-                  <Font name="Arial Bold" size="18.0" />
+                  <Font name="Arial Bold" size="30.0" />
                </font>
             </Label>
          </center>
       </BorderPane>
-      <BorderPane layoutY="26.0" prefHeight="374.0" prefWidth="107.0" />
-      <VBox layoutX="1.0" layoutY="26.0" prefHeight="374.0" prefWidth="134.0">
-         <children>
-            <Label prefHeight="35.0" prefWidth="133.0" text="           Order Now" textAlignment="CENTER" textFill="#0d43e4">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Label>
-            <Button fx:id="MuttonButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#MuttonButtonOnAction" prefHeight="36.0" prefWidth="133.0" text="Mutton" />
-            <Button fx:id="ChickenButton" layoutX="10.0" layoutY="46.0" mnemonicParsing="false" onAction="#ChickenButtonOnAction" prefHeight="36.0" prefWidth="133.0" text="Chicken" />
-            <Button fx:id="BeefButton" layoutX="10.0" layoutY="46.0" mnemonicParsing="false" onAction="#BeefButtonOnAction" prefHeight="36.0" prefWidth="133.0" text="Beef" />
-            <Button fx:id="FishButton" layoutX="10.0" layoutY="118.0" mnemonicParsing="false" onAction="#FishButtonOnAction" prefHeight="36.0" prefWidth="133.0" text="Fish" />
-         </children>
-      </VBox>
    </children>
 </AnchorPane>

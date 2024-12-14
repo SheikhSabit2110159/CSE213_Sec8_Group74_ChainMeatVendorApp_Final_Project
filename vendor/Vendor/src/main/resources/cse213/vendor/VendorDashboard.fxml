@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="dashBoardBorderPaneV" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.vendor.VendorDashboard">
+   <top>
+      <MenuBar style="-fx-background-color: #89A8B2;" BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="My Account">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Order History " />
+                  <MenuItem mnemonicParsing="false" text="Order Status " />
+                  <MenuItem mnemonicParsing="false" text="Pending Orders" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Order ">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Order History " />
+                  <MenuItem mnemonicParsing="false" text="Order Status " />
+                  <MenuItem mnemonicParsing="false" text="Pending Orders" />
+                  <MenuItem mnemonicParsing="false" text="Print pending Orders" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Payment">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Online" />
+                  <MenuItem mnemonicParsing="false" text="Offline" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Live Chat" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Pollicy">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Live Chat" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="States">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Total Parcel" />
+                  <MenuItem mnemonicParsing="false" text="Cancel" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox alignment="CENTER" prefHeight="374.0" prefWidth="126.0" style="-fx-background-color: #89A8B2;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="AddProductButtonVD" layoutX="19.0" layoutY="237.0" mnemonicParsing="false" onAction="#AddProductButtonVDOA" prefHeight="26.0" prefWidth="109.0" text="Add Product" />
+            <Button fx:id="InventoryButtonVD" mnemonicParsing="false" onAction="#InventoryButtonVDOA" prefHeight="26.0" prefWidth="109.0" text="Inventory " />
+            <Button fx:id="ProductDemoudButtonVD" mnemonicParsing="false" onAction="#ProductDemoudButtonVDOA" prefHeight="26.0" prefWidth="108.0" text="Product Demoud" />
+            <Button fx:id="QualityControlButtonVD" layoutX="59.0" layoutY="172.0" mnemonicParsing="false" onAction="#QualityControlButtonVDOA" prefHeight="26.0" prefWidth="110.0" text="Quality Control" />
+            <Button fx:id="FeedBacksButtonVD" layoutX="59.0" layoutY="159.0" mnemonicParsing="false" onAction="#FeedBacksButtonVDOA" prefHeight="26.0" prefWidth="112.0" text="FeedBacks" />
+            <Button fx:id="PricingButtonVD" layoutX="19.0" layoutY="144.0" mnemonicParsing="false" onAction="#PricingButtonVDOA" prefHeight="26.0" prefWidth="109.0" text="Pricing" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="134.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendor Dashboard" wrappingWidth="205.05859375">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font></Text>
+            <Button fx:id="OurPolicyButtonVD" layoutX="77.0" layoutY="299.0" mnemonicParsing="false" onAction="#OurPolicyButtonVDOA" style="-fx-background-color: #89A8B2;" text="Our Policy">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="PaymentRequestButtonVD" layoutX="242.0" layoutY="158.0" mnemonicParsing="false" onAction="#PaymentRequestButtonVDOA" prefHeight="58.0" prefWidth="122.0" style="-fx-background-color: #89A8B2;" text="Payment Request">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="PerformanceButtonVD" layoutX="310.0" layoutY="299.0" mnemonicParsing="false" onAction="#PerformanceButtonVDOA" style="-fx-background-color: #89A8B2;" text="Performance">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <TextField layoutX="92.0" layoutY="158.0" prefHeight="57.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

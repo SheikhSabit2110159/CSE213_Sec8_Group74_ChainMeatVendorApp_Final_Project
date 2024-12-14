@@ -14,20 +14,21 @@ public class CustomerDashboard {
     private Button muttonButton;
     @javafx.fxml.FXML
     private Button policyButtonCD;
+
     @javafx.fxml.FXML
-    private Button sausagesButton; // Corrected to match FXML name
+    private Button sausagesButton;
     @javafx.fxml.FXML
-    private Button cartButton; // Corrected to match FXML name
+    private Button cartButton;
     @javafx.fxml.FXML
-    private Button customerServiceButtonCD; // Corrected to match FXML name
+    private Button customerServiceButtonCD;
     @javafx.fxml.FXML
-    private Button fishButton; // Corrected to match FXML name
+    private Button fishButton;
     @javafx.fxml.FXML
-    private Button beefButton; // Corrected to match FXML name
+    private Button beefButton;
     @javafx.fxml.FXML
-    private MenuBar customerDashboardMenuBar; // Corrected to match FXML name
+    private MenuBar customerDashboardMenuBar;
     @javafx.fxml.FXML
-    private Button poultryButton; // Corrected to match FXML name
+    private Button poultryButton;
 
     @javafx.fxml.FXML
     public void initialize() {

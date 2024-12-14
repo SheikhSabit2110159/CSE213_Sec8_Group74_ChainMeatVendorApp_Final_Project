@@ -9,8 +9,8 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.projectoop.Login">
    <children>
-      <TextField fx:id="UserIDTextField" layoutX="193.0" layoutY="127.0" prefHeight="26.0" prefWidth="187.0" />
-      <Button fx:id="ForgotPasswordButton" layoutX="120.0" layoutY="314.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #87CEEB;" text="Forgot Password" />
+      <TextField fx:id="UserIDTextField" layoutX="193.0" layoutY="137.0" prefHeight="26.0" prefWidth="187.0" />
+      <Button fx:id="ForgotPasswordButton" layoutX="120.0" layoutY="314.0" mnemonicParsing="false" onAction="#ForgotPasswordButtonOnAction" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #87CEEB;" text="Forgot Password" />
       <Label layoutX="260.0" layoutY="101.0" prefHeight="18.0" prefWidth="54.0" text="User ID">
          <font>
             <Font name="System Bold" size="14.0" />
@@ -21,8 +21,8 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Button fx:id="CreateAccountButton" layoutX="351.0" layoutY="314.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #87CEEB;" text="Create Account" />
-      <PasswordField fx:id="LoginPasswordField" layoutX="190.0" layoutY="200.0" prefHeight="26.0" prefWidth="187.0" />
-      <Button fx:id="LogInButton1" layoutX="247.0" layoutY="244.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #87CEEB;" text="Log In" />
+      <Button fx:id="CreateAccountButton" layoutX="351.0" layoutY="314.0" mnemonicParsing="false" onAction="#CreateAccountButtonOnAction" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #87CEEB;" text="Create Account" />
+      <PasswordField fx:id="LoginPasswordTextField" layoutX="190.0" layoutY="200.0" prefHeight="26.0" prefWidth="187.0" />
+      <Button fx:id="LogInButton1" layoutX="247.0" layoutY="244.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #87CEEB;" text="Log In" />
    </children>
 </AnchorPane>

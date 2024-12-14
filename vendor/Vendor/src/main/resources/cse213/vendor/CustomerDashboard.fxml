@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="BorderPaneCD" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.vendor.CustomerDashboard">
+   <top>
+      <MenuBar fx:id="CustomerDaashboardMenuBar" style="-fx-background-color: #87CEEB;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Orders">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Order History " />
+                  <MenuItem mnemonicParsing="false" text="Order Status " />
+                  <MenuItem mnemonicParsing="false" text="Re-Order " />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Payment">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Online" />
+                  <MenuItem mnemonicParsing="false" text="Offline" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="How to place order? " />
+                  <MenuItem mnemonicParsing="false" text="Live Chat" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #87CEEB;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="FishButton" mnemonicParsing="false" onAction="#FishButtonOA" prefHeight="26.0" prefWidth="67.0" text="Fish" />
+            <Button fx:id="PoultryButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#PoultryButtonOA" prefHeight="26.0" prefWidth="68.0" text="Poultry" />
+            <Button fx:id="Beefutton" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#BeefuttonOA" prefHeight="26.0" prefWidth="69.0" text="Beef" />
+            <Button fx:id="muttonButton" mnemonicParsing="false" onAction="#muttonButtonOA" prefHeight="26.0" prefWidth="67.0" text="Mutton" />
+            <Button fx:id="SausagesButton" mnemonicParsing="false" onAction="#muttonButtonOA" text="Sausages" />
+            <Button fx:id="CartButtonCD" layoutX="28.0" layoutY="236.0" mnemonicParsing="false" onAction="#CartButtonOA" prefHeight="26.0" prefWidth="65.0" text="Cart" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="103.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Dashboard">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="policyButtonCD" layoutX="47.0" layoutY="310.0" mnemonicParsing="false" onAction="#policyButtonCDOA" style="-fx-background-color: #87CEEB;" text="policy" />
+            <Button fx:id="CustomerServiceButtonCD" layoutX="310.0" layoutY="310.0" mnemonicParsing="false" onAction="#CustomerServiceButtonCDOA" style="-fx-background-color: #87CEEB;" text="Customer Service" />
+            <Button fx:id="OrderButtonCD" layoutX="135.0" layoutY="310.0" mnemonicParsing="false" onAction="#OrderButtonCDOA" style="-fx-background-color: #87CEEB;" text="Orders" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

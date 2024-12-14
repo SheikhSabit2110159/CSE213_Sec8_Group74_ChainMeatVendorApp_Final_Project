@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.vendor.CustomerPolicy">
+   <children>
+      <Button fx:id="AcceptButtonCP" layoutX="146.0" layoutY="335.0" mnemonicParsing="false" onAction="#AcceptButtonCPOA" text="Accept" />
+      <Button fx:id="BackButtonCP" layoutX="37.0" layoutY="335.0" mnemonicParsing="false" onAction="#BackButtonCPOA" text="Back" />
+      <Text layoutX="37.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TERMS AND CONDITIONS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By using the Site, any natural or legal person (the “User” or “Customer”) hereby agree that they have read these Terms and Conditions (the “Terms and Conditions”) carefully and accept to be bound by the Terms and Conditions and represent that they agree to comply with these Terms and Conditions. If any User does not agree to all of the Terms and Conditions, he or she will not be able to access the Site or avail any of its services. The Terms and Conditions are deemed effective upon the use of the Site which signifies the User’s acceptance of these Terms and Conditions. If any User does not want to be bound by the Terms and Conditions, such User must not subscribe to or use the Site or the services provided by the Site. " wrappingWidth="340.7260971069336" />
+   </children>
+</AnchorPane>

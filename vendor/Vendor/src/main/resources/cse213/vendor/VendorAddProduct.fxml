@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.vendor.VendorAddProduct">
+   <children>
+      <TableView fx:id="TableViewVAP" layoutX="14.0" layoutY="231.0" prefHeight="142.0" prefWidth="362.0">
+        <columns>
+          <TableColumn prefWidth="100.79998779296875" text="Product Name " />
+          <TableColumn prefWidth="62.39996337890625" text="Weight" />
+            <TableColumn prefWidth="33.5999755859375" text="Quantity" />
+            <TableColumn prefWidth="92.79998779296875" text="Price per item " />
+            <TableColumn prefWidth="65.5999755859375" text="Total" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="WeightComboBoxVAP" layoutX="24.0" layoutY="100.0" prefHeight="26.0" prefWidth="114.0" promptText="Weight" />
+      <ComboBox fx:id="ProductNameComboBoxVAP" layoutX="20.0" layoutY="47.0" prefHeight="26.0" prefWidth="122.0" promptText="Product Name" />
+      <ComboBox fx:id="QuantityComboBoxVAP" layoutX="24.0" layoutY="148.0" prefHeight="26.0" prefWidth="114.0" promptText="Quantity" />
+      <Button fx:id="AddButtonVAP" layoutX="219.0" layoutY="148.0" mnemonicParsing="false" onAction="#PolicyButtonVAPOA" prefHeight="26.0" prefWidth="97.0" text="Add" />
+      <CheckBox fx:id="CheckBoxVAP" layoutX="24.0" layoutY="200.0" mnemonicParsing="false" onAction="#CheckBoxVAPOA" text="I  accept the policy" />
+      <Button fx:id="PolicyButtonVAP" layoutX="219.0" layoutY="100.0" mnemonicParsing="false" onAction="#PolicyButtonVAPOA" prefHeight="26.0" prefWidth="98.0" text="Policy" />
+      <Button fx:id="QualityControlButtonVAP" layoutX="220.0" layoutY="47.0" mnemonicParsing="false" onAction="#QualityControlButtonVAPOA" text="Quality Control" />
+      <Button fx:id="BackButtonVAP" layoutX="242.0" layoutY="196.0" mnemonicParsing="false" onAction="#BackButtonVAPOA" text="Back" />
+   </children>
+</AnchorPane>
